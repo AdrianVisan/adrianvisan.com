@@ -1,0 +1,114 @@
+baseurl = "http://adrianvisan.com/"
+publishDir = "../adrianvisan.github.io"
+themesDir = "../themes"
+languageCode = "en-us"
+defaultContentLanguage = "en-us"
+title = "Adrian Visan"
+theme = "hugo-tranquilpeak-theme"
+paginate = 7
+canonifyurls = true
+disqusShortname = "adrianvisan"
+googleAnalytics = "UA-101029349-1"
+
+[permalinks]
+  post = "/:year/:month/:slug/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  archive = "archives"
+
+[author]
+  name = "Adrian Visan"
+  bio = "Turning coffee into code"
+  job = "Software Developer"
+  location = "Dublin, Ireland"
+  picture = "/images/profile_verysmall.png"
+  logo = "/images/cardlogo.png"
+  twitter = "iloveshaders"
+  linkedin = "adrianvisan"
+  github = "AdrianVisan"
+  about_custom_css = "/css/about_custom.css"
+  about_custom_js = "/js/about_custom.js"
+  locationlink = "https://goo.gl/Bht8qR"
+  joblink = "https://en.wikipedia.org/wiki/Software_developer"
+
+# Menu Configuration
+[[menu.main]]
+  weight = 1
+  identifier = "home"
+  name = "Home"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-home\"></i>"
+  url = "/"
+[[menu.main]]
+  weight = 2
+  identifier = "tags"
+  name = "Tags"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-tags\"></i>"
+  url = "/tags"
+[[menu.main]]
+  weight = 3
+  identifier = "categories"
+  name = "Categories"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
+  url = "/categories"
+[[menu.main]]
+  weight = 4
+  identifier = "archives"
+  name = "Archives"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
+  url = "/archives"
+[[menu.main]]
+  weight = 5
+  identifier = "about"
+  name = "About"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
+  url = "/#about"
+
+[[menu.links]]
+  weight = 1
+  identifier = "linkedin"
+  name = "LinkedIn"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-linkedin\"></i>"
+  url = "https://www.linkedin.com/in/adrianvisan/"
+[[menu.links]]
+  weight = 2
+  identifier = "twitter"
+  name = "Twitter"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
+  url = "https://twitter.com/iloveshaders"
+[[menu.links]]
+  weight = 3
+  identifier = "github"
+  name = "GitHub"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-github\"></i>"
+  url = "https://github.com/AdrianVisan"
+
+[[menu.misc]]
+  weight = 0
+  identifier = "rss"
+  name = "RSS"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-rss\"></i>"
+  url = "/index.xml"
+
+[params]
+  dateFormat = "2 January 2006"
+  keywords = ["development", "code", "software"]
+  clearReading = true
+  hierarchicalCategories = true
+  description = "Adrian's place to write stuff"
+  sidebarBehavior = 1
+  coverImage = "sea30softmirror.jpg"
+  imageGallery = false
+  thumbnailImage = true
+  thumbnailImagePosition = "bottom"
+  autoThumbnailImage = true
+  favicon = "/favicon.ico"
+
+  [params.header.rightLink]
+    class = ""
+    icon = ""
+    url = "/#about"
+
+  [params.footer]
+     copyright = "<a href=\"https://github.com/AdrianVisan/\">Adrian Visan</a>"

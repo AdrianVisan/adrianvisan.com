@@ -1,0 +1,42 @@
+<div id="about">
+  <div id="about-card">
+    {{ with .Site.Author.about_custom_css }}
+      <link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}" />
+    {{ end }}
+    {{ with .Site.Author.about_custom_js }}
+      <script src="{{ $.Site.BaseURL }}{{ . }}" ></script>
+    {{ end }}
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    <div id="about-card-picture" onclick="flip(this)" on-tap="flip(this)">
+      {{ with ($.Scratch.Get "authorPicture") }}
+        <img id="about-card-picture-face" src="{{ . }}{{ if in . "//www.gravatar.com/avatar/" }}?s=110{{ end }}" alt="{{ i18n "global.author_picture" }}" />
+      {{ end }}
+      <img id="about-card-picture-logo"  src="{{ .Site.Author.logo }}"/>
+    </div>
+    <h4 id="about-card-name">{{ .Site.Author.name }}</h4>
+    {{ with .Site.Author.bio }}
+      <div id="about-card-bio">{{ . | markdownify }}</div>
+    {{ end }}
+    <div id="about-card-job">
+      <a href="{{ .Site.Author.joblink }}" target="_blank">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        {{ .Site.Author.job | markdownify }}
+      </a>
+    </div>
+    <div id="about-card-location">
+      <a href="{{ .Site.Author.locationlink }}" target="_blank">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        {{ .Site.Author.location }}
+      </a>
+    </div>
+    <div id="about-card-social">
+      <a class="sidebar-button-icon fa fa-lg fa-linkedin" href="https://www.linkedin.com/in/{{ .Site.Author.linkedin }}/"></a>
+      <a class="sidebar-button-icon fa fa-lg fa-twitter" href="https://twitter.com/{{ .Site.Author.twitter }}/"></a>
+      <a class="sidebar-button-icon fa fa-lg fa-github" href="https://github.com/{{ .Site.Author.github }}"></a>
+    </div>
+  </div>
+</div>
