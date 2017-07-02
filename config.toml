@@ -104,6 +104,7 @@ googleAnalytics = "UA-101029349-1"
   thumbnailImagePosition = "bottom"
   autoThumbnailImage = true
   favicon = "/favicon.ico"
+  customCSS = ["/css/custom.css"]
 
   [params.header.rightLink]
     class = ""
