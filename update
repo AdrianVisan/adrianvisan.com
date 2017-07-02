@@ -1,0 +1,6 @@
+#!/bin/bash
+# Git commit and push script
+
+MSG=$1
+
+(cd ../adrianvisan.github.io/ && git add . && git commit -m "$MSG" && git push)

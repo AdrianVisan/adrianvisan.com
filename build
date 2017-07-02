@@ -1,0 +1,11 @@
+#!/bin/bash
+# Build Script
+
+#Clean old build
+echo -e "\e[4m\e[1mClean\e[0m\n"
+(cd ../adrianvisan.github.io/ && git rm -rf . || true && git clean -fdx)
+echo -e "\n\n=====\n\n"
+
+#Build new
+echo -e "\e[4m\e[1mBuild\e[0m\n"
+hugo
