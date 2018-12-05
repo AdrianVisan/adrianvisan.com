@@ -14,7 +14,6 @@ googleAnalytics = "UA-101029349-1"
   post = "/:year/:month/:slug/"
 
 [taxonomies]
-  category = "categories"
   tag = "tags"
   archive = "archives"
 
@@ -31,7 +30,7 @@ googleAnalytics = "UA-101029349-1"
   about_custom_css = "/css/about_custom.css"
   about_custom_js = "/js/about_custom.js"
   locationlink = "https://goo.gl/Bht8qR"
-  joblink = "https://en.wikipedia.org/wiki/Software_developer"
+  joblink = "https://en.wikipedia.org/wiki/Programmer"
 
 # Menu Configuration
 [[menu.main]]
@@ -48,18 +47,12 @@ googleAnalytics = "UA-101029349-1"
   url = "/tags"
 [[menu.main]]
   weight = 3
-  identifier = "categories"
-  name = "Categories"
-  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-bookmark\"></i>"
-  url = "/categories"
-[[menu.main]]
-  weight = 4
   identifier = "archives"
   name = "Archives"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-archive\"></i>"
   url = "/archives"
 [[menu.main]]
-  weight = 5
+  weight = 4
   identifier = "about"
   name = "About"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-question\"></i>"
